@@ -11,5 +11,3 @@ for (let i = 0; i < arrayVuoto.length; i++) {
 document.getElementById("secondaRiga").innerHTML = `La somma dei numeri all'interno dell'array è ${sum}`;
 
 
-
-// Da completare domani
