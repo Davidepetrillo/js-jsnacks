@@ -1,4 +1,11 @@
-let arrayDiNumeri = [2,4,6,5,9,8,1,7,6,3 ];
+
+let arrayDiNumeri = [];
+for(i = 0; i < 10; i++){
+let richiestaUtente = parseInt(prompt("Inserisci un numero"));
+
+arrayDiNumeri.push(richiestaUtente);
+    
+}
 document.getElementById("primaRiga").innerHTML = `[${arrayDiNumeri}]`;
 
 sommaNumeri();
@@ -12,13 +19,12 @@ function sommaNumeri (){
         somma += arrayDiNumeri[i];
     }
     document.getElementById("secondaRiga").innerHTML = `La somma dei numeri contenuti nell'array è ${somma}`;
-    //console.log(somma);
 }
 
 function mediaAritmetica(arrayDiNumeri) {
-    var i = 0, summ = 0, ArrayLen = arrayDiNumeri.length;
-    while (i < ArrayLen) {
-        summ = summ + arrayDiNumeri[i++];
+    let i = 0, somma = 0;
+    while (i < arrayDiNumeri.length) {
+        somma = somma + arrayDiNumeri[i++];
 }
-    return summ / ArrayLen;
+    return somma / arrayDiNumeri.length;
 }
